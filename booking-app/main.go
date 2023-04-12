@@ -61,7 +61,7 @@ func main(){
 	// fmt.Println(bookings2);
 
 
-	if userTickets <= remainingTickets{
+	if userTickets < remainingTickets{
 
 	remainingTickets = remainingTickets - userTickets
 
@@ -84,9 +84,11 @@ func main(){
 	}
 
 	
+	
+ 
 	} else {
 		 fmt.Printf("We only have %v tickets remaining, so you can't book %v tickets\n",remainingTickets,userTickets)
-
+		
 	}	
 }
 }
